@@ -25,19 +25,22 @@ SHAM-AI is a novel security framework designed to detect and mitigate multi-moda
 ```
 Raw CDT Telemetry Data
         ↓
-[SNN AUTOENCODER] ← START HERE (Preprocessing embedded)
+[SNN AUTOENCODER BLOCK] ← START HERE
         ↓
    Preprocessing
-   (non-windowed)
-        ↓
-   /        \
+   (embedded in SNN)
+           ↓
+   /             \
+  ↓                ↓
+Window           Flatten
+(Temporal)      (Non-windowed)
+  ↓                  ↓
+SNN AUTOENCODER      IF
+(Temporal Scores)  (Spatial)
   ↓          ↓
- IF        Flatten
-(Spatial)  (Windowed Data)
-  ↓          ↓
-  └──────────┴────→ [Feature Extraction]
+  └──────────┴────→ [Feature Fusion] + Confidence + Safety Valve Parameters
               ↓
-        [DQN Decision Agent]
+        [DQN RL Agent]
               ↓
         [Action Output]
       (Alert/Pass/Quarantine)
