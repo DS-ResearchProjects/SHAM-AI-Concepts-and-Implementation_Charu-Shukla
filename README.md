@@ -160,7 +160,7 @@ The repository uses a single raw dataset that is automatically processed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/SHAM-AI.git
+git clone https://github.com/DS-ResearchProjects/Charu-Shukla_Projects.git
 cd SHAM-AI
 
 # Launch Jupyter
