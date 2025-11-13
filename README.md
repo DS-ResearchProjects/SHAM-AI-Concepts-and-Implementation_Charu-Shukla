@@ -74,8 +74,8 @@ The SNN Autoencoder captures temporal patterns in CDT telemetry using spiking ne
 - Reconstruction error scores (temporal confidence)
 - Anomaly threshold (98th percentile)
 - Binary SNN predictions
-- Evaluation metrics (ROC-AUC, Precision, Recall, F1-Score, Accuracy)
-
+- Evaluation metrics
+  
 ### Component 2: Isolation Forest (Spatial Anomaly Detection)
 
 **IMPORTANT: Run this cell AFTER the SNN Autoencoder cell completes.**
@@ -97,8 +97,8 @@ Isolation Forest captures spatial point anomalies and deviations from normal dat
 **Outputs Generated**:
 - Spatial anomaly scores (confidence metric from IF)
 - Binary IF predictions
-- Evaluation metrics (ROC-AUC, Precision, Recall, F1-Score)
-
+- Evaluation metrics
+  
 ### Component 3: DQN Agent (Reinforcement Learning-Based Decision Making)
 
 **IMPORTANT: Run this cell AFTER both SNN and Isolation Forest cells complete.**
@@ -131,8 +131,7 @@ The DQN agent learns optimal mitigation policies by combining both temporal and 
 ```
 SHAM-AI/
 ├── README.md
-├── notebooks/
-│   └── SHAM_AI_Complete.ipynb
+├── SHAM-AI.ipynb
 ├── dataset.csv
 ```
 
@@ -140,7 +139,7 @@ SHAM-AI/
 
 The repository uses a single raw dataset that is automatically processed:
 
-- **`data/raw_dataset.csv`**: Raw input dataset containing both normal and anomaly samples
+- **`dataset.csv`**: Raw input dataset containing both normal and anomaly samples
   - Automatically processed by SNN component
 
 **Auto-Generated Data During Execution**:
@@ -156,7 +155,6 @@ The repository uses a single raw dataset that is automatically processed:
 - NumPy, Pandas, Scikit-learn
 - Snntorch (for SNN implementation)
 - Jupyter Notebook or JupyterLab
-- Additional dependencies in `requirements.txt`
 
 ### Setup
 
@@ -204,11 +202,3 @@ If you use SHAM-AI in your research, please cite:
   year={2024}
 }
 ```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For questions or feedback, please contact the development team or open an issue on GitHub.
