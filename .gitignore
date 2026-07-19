@@ -1,0 +1,14 @@
+# Ignore downloaded dataset files
+data/
+train_test_network.csv
+
+# Ignore Jupyter temporary files
+.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+.venv/
