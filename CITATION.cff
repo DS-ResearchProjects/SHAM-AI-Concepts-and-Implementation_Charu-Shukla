@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use SHAM-AI in your research, please cite our published ACM TIST article."
+type: software
+title: "SHAM-AI: Self-Healing and Adaptive Multi-Modal Anomaly Intelligence"
+authors:
+  - family-names: Saxena
+    given-names: Deepika
+    affiliation: University of Aizu
+  - family-names: Shukla
+    given-names: Charu
+    affiliation: University of Aizu
+  - family-names: Singh
+    given-names: Ashutosh Kumar
+    affiliation: Indian Institute of Information Technology Bhopal
+
+preferred-citation:
+  type: article
+  title: "SHAM-AI: A Self-Healing and Adaptive Multi-Modal Anomaly Intelligence Framework for Securing Cloud Digital Twins"
+  authors:
+    - family-names: Saxena
+      given-names: Deepika
+    - family-names: Shukla
+      given-names: Charu
+    - family-names: Singh
+      given-names: Ashutosh Kumar
+  journal: "ACM Transactions on Intelligent Systems and Technology"
+  year: 2026
+  doi: "10.1145/3832321"

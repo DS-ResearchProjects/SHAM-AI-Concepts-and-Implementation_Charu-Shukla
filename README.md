@@ -238,7 +238,7 @@ is not redistributed in this repository.
 Users should review and cite the publications listed on the 
 [official TON_IoT dataset page](https://research.unsw.edu.au/projects/toniot-datasets).
 
-## Citation
+<!-- ## Citation
 
 If you use SHAM-AI in your research, please cite:
 
@@ -247,4 +247,32 @@ If you use SHAM-AI in your research, please cite:
   title={SHAM-AI: Self-Healing and Adaptive Multi-Modal Anomaly Intelligence for Cloud-based Digital Twin Security},
   year={2024}
 }
+``` -->
+
+## Citation
+
+If you use **SHAM-AI** in your research, please cite our published article in *ACM Transactions on Intelligent Systems and Technology (ACM TIST)*.
+
+```bibtex
+@article{saxena_shukla_2026,
+  title   = {SHAM-AI: A Self-Healing and Adaptive Multi-Modal Anomaly Intelligence Framework for Securing Cloud Digital Twins},
+  author  = {Saxena, Deepika and Shukla, Charu and Singh, Ashutosh Kumar},
+  journal = {ACM Transactions on Intelligent Systems and Technology},
+  year    = {2026},
+  doi     = {10.1145/3832321},
+  url     = {https://doi.org/10.1145/3832321},
+  publisher = {Association for Computing Machinery}
+}
 ```
+
+Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
+
+**Publication:** [ACM Digital Library](https://doi.org/10.1145/3832321)
+
+## License
+
+The SHAM-AI source code is released under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+Third-party datasets and dependencies are subject to their respective licenses and terms of use.
+
+If you use SHAM-AI in your research, please cite our published ACM TIST paper (see the [Citation](#citation) section).
